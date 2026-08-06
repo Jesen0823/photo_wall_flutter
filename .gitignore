@@ -133,3 +133,5 @@ app.*.map.json
 
 .claudeignore
 CLAUDE.md
+.trae/
+run_log.txt

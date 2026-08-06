@@ -1,0 +1,22 @@
+{
+  "@@locale": "zh",
+  "appTitle": "照片墙",
+  "homeTabPhoto": "照片墙",
+  "homeTabMessage": "留言墙",
+  "actionPublish": "发表",
+  "actionLike": "点赞",
+  "actionReport": "举报",
+  "actionRevoke": "撤回",
+  "actionEdit": "编辑",
+  "actionDelete": "删除",
+  "actionRetry": "重试",
+  "stateLoading": "加载中...",
+  "stateEmpty": "暂无内容",
+  "errorNetwork": "网络错误，请重试",
+  "errorUnknown": "发生未知错误",
+  "errorPageNotFound": "页面不存在",
+  "editorHintMessage": "写点什么...",
+  "editorHintPhoto": "选择照片",
+  "loginTitle": "登录",
+  "registerTitle": "注册"
+}

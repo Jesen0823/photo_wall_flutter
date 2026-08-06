@@ -1,0 +1,12 @@
+# =============================================================================
+# 国际化配置（Flutter 官方 gen-l10n 方案）
+# =============================================================================
+# 配合 pubspec.yaml 的 `flutter: generate: true` 使用。
+# 执行 `flutter gen-l10n` 或在 `flutter pub get` / `flutter run` 时自动生成
+# AppLocalizations 类至 `lib/l10n/app_localizations.dart`。
+# =============================================================================
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+preferred-supported-locales: [en, zh]

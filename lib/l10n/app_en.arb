@@ -1,0 +1,79 @@
+{
+  "@@locale": "en",
+  "appTitle": "Photo Wall",
+  "@appTitle": {
+    "description": "Application title displayed in AppBar"
+  },
+  "homeTabPhoto": "Photo Wall",
+  "@homeTabPhoto": {
+    "description": "Tab label for photo wall"
+  },
+  "homeTabMessage": "Message Wall",
+  "@homeTabMessage": {
+    "description": "Tab label for message wall"
+  },
+  "actionPublish": "Publish",
+  "@actionPublish": {
+    "description": "Publish action button label"
+  },
+  "actionLike": "Like",
+  "@actionLike": {
+    "description": "Like action label"
+  },
+  "actionReport": "Report",
+  "@actionReport": {
+    "description": "Report action label"
+  },
+  "actionRevoke": "Revoke",
+  "@actionRevoke": {
+    "description": "Revoke action label"
+  },
+  "actionEdit": "Edit",
+  "@actionEdit": {
+    "description": "Edit action label"
+  },
+  "actionDelete": "Delete",
+  "@actionDelete": {
+    "description": "Delete action label"
+  },
+  "actionRetry": "Retry",
+  "@actionRetry": {
+    "description": "Retry button label on error"
+  },
+  "stateLoading": "Loading...",
+  "@stateLoading": {
+    "description": "Loading state text"
+  },
+  "stateEmpty": "No content yet",
+  "@stateEmpty": {
+    "description": "Empty state text"
+  },
+  "errorNetwork": "Network error, please try again",
+  "@errorNetwork": {
+    "description": "Network error message"
+  },
+  "errorUnknown": "Unknown error occurred",
+  "@errorUnknown": {
+    "description": "Unknown error message"
+  },
+  "errorPageNotFound": "Page not found",
+  "@errorPageNotFound": {
+    "description": "404 error page title"
+  },
+  "editorHintMessage": "Write something...",
+  "@editorHintMessage": {
+    "description": "Hint text in message editor"
+  },
+  "editorHintPhoto": "Select photo",
+  "@editorHintPhoto": {
+    "description": "Hint text in photo editor"
+  },
+  "loginTitle": "Login",
+  "@loginTitle": {
+    "description": "Login page title"
+  },
+  "registerTitle": "Register",
+  "@registerTitle": {
+    "description": "Register page title"
+  }
+}

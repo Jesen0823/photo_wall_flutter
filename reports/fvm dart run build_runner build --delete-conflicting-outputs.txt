@@ -1,0 +1,11 @@
+17s riverpod_generator on 106 inputs: 100 skipped, 5 same, 1 no-op; spent 13s analyzing, 3s resolving, 1s reading
+0s freezed on 106 inputs: 100 skipped, 6 no-op
+54s json_serializable on 212 inputs: 193 skipped, 19 no-op; spent 44s analyzing, 9s resolving, 2s reading
+2s drift_dev on 848 inputs: 792 skipped, 3 output, 35 same, 18 no-op; spent 1s analyzing
+0s source_gen:combining_builder on 424 inputs: 419 skipped, 1 output, 4 same
+
+build_runner
+W These options have been removed and were ignored: --delete-conflicting-outputs
+W SDK language version 3.12.0 is newer than `analyzer` language version 3.11.0. Run `flutter packages upgrade`.
+
+Built with build_runner/aot in 89s with warnings; wrote 48 outputs.

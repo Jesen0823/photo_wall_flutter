@@ -1,0 +1,275 @@
+fvm dart run build_runner build --delete-conflicting-outputs
+0s riverpod_generator on 106 inputs: 106 skipped
+0s freezed on 106 inputs: 106 skipped
+0s json_serializable on 212 inputs: 212 skipped
+0s drift_dev on 848 inputs: 848 skipped
+0s source_gen:combining_builder on 424 inputs: 424 skipped
+
+build_runner
+W These options have been removed and were ignored: --delete-conflicting-outputs
+
+lib/features/detail/data/datasources/detail_remote_data_source.dart riverpod_generator
+E 2:8: Expected to find ';'.
+  2:20: Functions must have an explicit list of parameters.
+  2:35: A function body must be provided.
+  And 5 more.
+lib/features/detail/data/datasources/detail_remote_data_source.dart freezed
+E 2:8: Expected to find ';'.
+  2:20: Functions must have an explicit list of parameters.
+  2:35: A function body must be provided.
+  And 5 more.
+lib/features/detail/data/datasources/detail_remote_data_source.dart json_serializable
+E 2:8: Expected to find ';'.
+  2:20: Functions must have an explicit list of parameters.
+  2:35: A function body must be provided.
+  And 5 more.
+lib/features/detail/data/repositories/detail_repository_impl.dart riverpod_generator
+E 5:8: Expected to find ';'.
+  5:25: Functions must have an explicit list of parameters.
+  5:50: A function body must be provided.
+  And 14 more.
+lib/features/detail/data/repositories/detail_repository_impl.dart freezed
+E 5:8: Expected to find ';'.
+  5:25: Functions must have an explicit list of parameters.
+  5:50: A function body must be provided.
+  And 14 more.
+Log overflowed the console, switching to line-by-line logging.
+E json_serializable on lib/features/detail/data/repositories/detail_repository_impl.dart:
+  5:8: Expected to find ';'.
+  5:25: Functions must have an explicit list of parameters.
+  5:50: A function body must be provided.
+  And 14 more.
+E riverpod_generator on lib/features/detail/domain/repositories/detail_repository.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:40: A function body must be provided.
+  And 5 more.
+E freezed on lib/features/detail/domain/repositories/detail_repository.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:40: A function body must be provided.
+  And 5 more.
+E json_serializable on lib/features/detail/domain/repositories/detail_repository.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:40: A function body must be provided.
+  And 5 more.
+E riverpod_generator on lib/features/detail/domain/usecases/get_wall_detail_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:40: A function body must be provided.
+  And 14 more.
+E freezed on lib/features/detail/domain/usecases/get_wall_detail_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:40: A function body must be provided.
+  And 14 more.
+E json_serializable on lib/features/detail/domain/usecases/get_wall_detail_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:40: A function body must be provided.
+  And 14 more.
+E riverpod_generator on lib/features/editor/data/datasources/editor_remote_data_source.dart:
+  2:8: Expected to find ';'.
+  2:20: Functions must have an explicit list of parameters.
+  2:35: A function body must be provided.
+  And 5 more.
+E freezed on lib/features/editor/data/datasources/editor_remote_data_source.dart:
+  2:8: Expected to find ';'.
+  2:20: Functions must have an explicit list of parameters.
+  2:35: A function body must be provided.
+  And 5 more.
+E json_serializable on lib/features/editor/data/datasources/editor_remote_data_source.dart:
+  2:8: Expected to find ';'.
+  2:20: Functions must have an explicit list of parameters.
+  2:35: A function body must be provided.
+  And 5 more.
+E riverpod_generator on lib/features/editor/data/repositories/editor_repository_impl.dart:
+  4:8: Expected to find ';'.
+  4:25: Functions must have an explicit list of parameters.
+  4:50: A function body must be provided.
+  And 14 more.
+E freezed on lib/features/editor/data/repositories/editor_repository_impl.dart:
+  4:8: Expected to find ';'.
+  4:25: Functions must have an explicit list of parameters.
+  4:50: A function body must be provided.
+  And 14 more.
+E json_serializable on lib/features/editor/data/repositories/editor_repository_impl.dart:
+  4:8: Expected to find ';'.
+  4:25: Functions must have an explicit list of parameters.
+  4:50: A function body must be provided.
+  And 14 more.
+E riverpod_generator on lib/features/editor/domain/repositories/editor_repository.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 5 more.
+E freezed on lib/features/editor/domain/repositories/editor_repository.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 5 more.
+E json_serializable on lib/features/editor/domain/repositories/editor_repository.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 5 more.
+E riverpod_generator on lib/features/editor/domain/usecases/edit_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E freezed on lib/features/editor/domain/usecases/edit_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E json_serializable on lib/features/editor/domain/usecases/edit_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E riverpod_generator on lib/features/editor/domain/usecases/publish_message_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E freezed on lib/features/editor/domain/usecases/publish_message_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E json_serializable on lib/features/editor/domain/usecases/publish_message_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E riverpod_generator on lib/features/editor/domain/usecases/publish_photo_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E freezed on lib/features/editor/domain/usecases/publish_photo_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E json_serializable on lib/features/editor/domain/usecases/publish_photo_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:36: A function body must be provided.
+  And 14 more.
+E riverpod_generator on lib/features/editor/presentation/pages/message_editor_page.dart:
+  5:8: Expected to find ';'.
+  5:31: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+  5:31: Expected to find ';'.
+  And 20 more.
+E freezed on lib/features/editor/presentation/pages/message_editor_page.dart:
+  5:8: Expected to find ';'.
+  5:31: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+  5:31: Expected to find ';'.
+  And 20 more.
+E json_serializable on lib/features/editor/presentation/pages/message_editor_page.dart:
+  5:8: Expected to find ';'.
+  5:31: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+  5:31: Expected to find ';'.
+  And 20 more.
+E riverpod_generator on lib/features/editor/presentation/pages/photo_editor_page.dart:
+  5:8: Expected to find ';'.
+  5:31: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+  5:31: Expected to find ';'.
+  And 21 more.
+E freezed on lib/features/editor/presentation/pages/photo_editor_page.dart:
+  5:8: Expected to find ';'.
+  5:31: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+  5:31: Expected to find ';'.
+  And 21 more.
+E json_serializable on lib/features/editor/presentation/pages/photo_editor_page.dart:
+  5:8: Expected to find ';'.
+  5:31: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+  5:31: Expected to find ';'.
+  And 21 more.
+E riverpod_generator on lib/features/home/data/datasources/wall_remote_data_source.dart:
+  6:8: Expected to find ';'.
+  6:20: Functions must have an explicit list of parameters.
+  6:35: A function body must be provided.
+  And 14 more.
+E freezed on lib/features/home/data/datasources/wall_remote_data_source.dart:
+  6:8: Expected to find ';'.
+  6:20: Functions must have an explicit list of parameters.
+  6:35: A function body must be provided.
+  And 14 more.
+E json_serializable on lib/features/home/data/datasources/wall_remote_data_source.dart:
+  6:8: Expected to find ';'.
+  6:20: Functions must have an explicit list of parameters.
+  6:35: A function body must be provided.
+  And 14 more.
+E riverpod_generator on lib/features/home/domain/usecases/get_wall_page_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:38: A function body must be provided.
+  And 23 more.
+E freezed on lib/features/home/domain/usecases/get_wall_page_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:38: A function body must be provided.
+  And 23 more.
+E json_serializable on lib/features/home/domain/usecases/get_wall_page_usecase.dart:
+  1:8: Expected to find ';'.
+  1:22: Functions must have an explicit list of parameters.
+  1:38: A function body must be provided.
+  And 23 more.
+E riverpod_generator on lib/features/home/domain/usecases/like_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E freezed on lib/features/home/domain/usecases/like_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E json_serializable on lib/features/home/domain/usecases/like_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E riverpod_generator on lib/features/home/domain/usecases/report_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E freezed on lib/features/home/domain/usecases/report_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E json_serializable on lib/features/home/domain/usecases/report_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E riverpod_generator on lib/features/home/domain/usecases/revoke_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E freezed on lib/features/home/domain/usecases/revoke_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+  1:41: A function body must be provided.
+  And 5 more.
+E json_serializable on lib/features/home/domain/usecases/revoke_wall_item_usecase.dart:
+  1:8: Expected to find ';'.
+  1:26: Functions must have an explicit list of parameters.
+36s riverpod_generator on 106 inputs: 85 skipped, 4 same, 17 no-op; spent 29s analyzing, 6s resolving, 1s reading
+0s freezed on 106 inputs: 85 skipped, 21 no-op
+8s json_serializable on 212 inputs: 181 skipped, 31 no-op; spent 6s analyzing, 1s resolving
+1s drift_dev on 848 inputs: 755 skipped, 34 output, 28 same, 31 no-op
+0s source_gen:combining_builder on 424 inputs: 420 skipped, 4 same
+
+build_runner
+W These options have been removed and were ignored: --delete-conflicting-outputs
+W SDK language version 3.12.0 is newer than `analyzer` language version 3.11.0. Run `flutter packages upgrade`.
+
+Built with build_runner/aot in 55s with warnings; wrote 70 outputs.6666

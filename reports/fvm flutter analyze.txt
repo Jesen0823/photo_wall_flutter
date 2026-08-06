@@ -1,0 +1,4 @@
+PS F:\Flutter\FlutterProjects_main\photo_wall_flutter> fvm flutter analyze
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing photo_wall_flutter...
+No issues found! (ran in 24.0s)

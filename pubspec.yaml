@@ -1,93 +1,103 @@
 name: photo_wall_flutter
-description: "A new Flutter project."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+description: "留言/日记/照片墙 Flutter 应用 - 支持 Android / iOS / Web 三端"
+publish_to: 'none'
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
 version: 1.0.0+1
 
 environment:
   sdk: ^3.12.2
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
+# =============================================================================
+# 依赖配置说明
+# =============================================================================
+# 依赖按职责分组：状态管理 / 网络 / 路由 / 数据库 / 国际化 / 存储 / 工具 / UI
+# 所有第三方依赖均在此声明，符合 CLAUDE.md 规范。
+# =============================================================================
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
+  # ---- 状态管理 ----
+  # Riverpod 3.x：核心状态管理框架，使用 AsyncNotifier / Notifier 范式
   riverpod: ^3.0.3
   flutter_riverpod: ^3.0.3
+  riverpod_annotation: ^3.0.0
+
+  # ---- 数据模型 ----
+  # freezed_annotation / json_annotation：freezed 与 json_serializable 运行时注解
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+
+  # ---- 网络请求 ----
+  # dio：高度封装的 HTTP 客户端，支持拦截器链、统一错误处理
   dio: ^5.9.2
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  # ---- 路由 ----
+  # go_router：Flutter 官方推荐声明式路由，支持 Web URL 同步、深链、嵌套路由、守卫
+  go_router: ^16.0.0
+
+  # ---- 本地数据库（类 Android Room） ----
+  # drift：类型安全、响应式 SQLite ORM，用于弱网下首页列表缓存优先展示
+  drift: ^2.20.0
+  sqlite3_flutter_libs: ^0.5.24
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # ---- 国际化 ----
+  # intl：配合 flutter_localizations 实现 arb 文件代码生成
+  intl: any
+
+  # ---- 存储与工具 ----
+  shared_preferences: ^2.3.2    # 主题模式等简单 KV 持久化
+  connectivity_plus: ^6.0.5     # 弱网/无网状态检测
+  cached_network_image: ^3.4.1  # 网络图片加载与缓存
+  logger: ^2.4.0                # 结构化日志
+
+  # ---- UI ----
   cupertino_icons: ^1.0.8
 
+# =============================================================================
+# 开发依赖配置说明
+# =============================================================================
+# 代码生成工具链负责以下模块：
+#   1. freezed + json_serializable → 不可变数据模型（features/*/data/models、
+#      presentation/providers/*_state.dart），生成 .freezed.dart 与 .g.dart
+#   2. drift_dev → drift 数据库（core/database/），生成 .drift.dart
+#   3. riverpod_generator → Provider 代码（features/*/presentation/providers/），
+#      生成 .g.dart
+#
+# 代码生成执行命令：
+#   一次性：dart run build_runner build --delete-conflicting-outputs
+#   持续监听：dart run build_runner watch -d
+# =============================================================================
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  # ---- 代码生成工具链 ----
+  build_runner: ^2.4.13         # 代码生成运行器
+  freezed: ^3.0.0               # 不可变模型代码生成（3.x 与 riverpod_generator 3.x 兼容）
+  json_serializable: ^6.8.0     # JSON 序列化代码生成
+  drift_dev: ^2.20.0            # drift 数据库代码生成
+  riverpod_generator: ^3.0.0    # Riverpod 3.x Provider 代码生成
+  riverpod_lint: ^3.0.0         # Riverpod 专用 lint 规则
+  custom_lint: ^0.8.1           # 自定义 lint 启用器（0.8+ 兼容 freezed_annotation 3.x）
+
+  # ---- 测试 ----
+  mocktail: ^1.0.4              # 无依赖注入的 mock 库
+
+  # ---- Lint ----
   flutter_lints: ^6.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
+# =============================================================================
+# Flutter 配置
+# =============================================================================
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
+  generate: true                # 启用 l10n 代码生成（配合 l10n.yaml）
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  assets:
+    - assets/images/
+    - assets/icons/
